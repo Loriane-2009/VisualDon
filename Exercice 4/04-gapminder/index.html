@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercice 4</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    svg {
+      margin-bottom: 40px;
+      border: 1px solid #ccc;
+    }
+    .tooltip {
+      position: absolute;
+      background: white;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      pointer-events: none;
+      z-index: 10;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Espérance de vie vs PIB par habitant (2021)</h1>
+  <svg id="scatter" width="960" height="600"></svg>
+  <h2>Carte choroplèthe de l'espérance de vie (2021)</h2>
+  <svg id="map" width="960" height="600"></svg>
+
+
+  <script type="module" src="/src/index.js"></script>
+</body>
+
+</html>

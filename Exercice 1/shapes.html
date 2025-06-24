@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>SVG - Dessiner et animer des formes</title>
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<svg width="900" height="400">
+  <!-- Rectangle rouge -->
+  <rect id="rect" x="10" y="10" width="800" height="300" fill="red" />
+
+  <!-- Donut -->
+  <circle id="donut-outer" cx="100" cy="100" r="60" fill="none" stroke="black" stroke-width="2"/>
+  <circle id="donut-inner" cx="100" cy="100" r="30" fill="white" stroke="white" stroke-width="2"/>
+
+  <!-- Ligne avec pente -->
+  <line x1="70" y1="90" x2="89.23" y2="186.15" stroke="blue" stroke-width="2" />
+
+  <!-- Lettre avec path (ex. L pour Loriane) -->
+  <path id="letter" d="M500,100 L500,200 L550,200" fill="none" stroke="purple" stroke-width="2"/>
+
+  <!-- Animation le long de la lettre -->
+  <circle r="5" fill="orange">
+    <animateMotion repeatCount="indefinite" dur="4s">
+      <mpath href="#letter" />
+    </animateMotion>
+  </circle>
+</svg>
+
+</body>
+</html>
